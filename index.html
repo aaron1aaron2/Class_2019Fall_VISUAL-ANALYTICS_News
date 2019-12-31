@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh_TW">
+	<title>Fake News</title>
+	<meta charset="utf-8">
+	<meta name="description" content="假新聞分析">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/fake.css">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<link rel="bookmark" href="img/favicon.ico"/>
+</head>
+<body>
+	<div class="container"></div>
+	<div class="header">
+		<a href="index.html"><h3>FAKE NEWS</h3></a>
+		<p>What Are They Hiding?</p>
+	</div>
+	<div class="topnav">
+		<ul>
+			<a href="index.html">Home</a>
+			<a href="analytic.html">Analytics</a>
+			<a href="outcome.html">Outcome</a>
+		</ul>
+		<hr>
+	</div>
+	<div class="content1">
+		<h2 class="content_title">Topic: 假新聞視覺化</h2>
+		<p>動機: 前陣子台灣的假新聞風波頻傳,由於假新聞會影響大眾想法,進而對國家造成巨大影響,所以我們想對這方面去研究、分析並呈現給大家看。<br>目的: 將假新聞的特徵視覺化,讓大家更淺顯易懂。<br>主要工具:  Python、R、SAS</p>
+		<div class="content1_data">
+			<a href="https://www.kaggle.com/c/fake-news-pair-classification-challenge/data" target="_blank">Article: WSDM-Fake News Classification</a>
+		</div>
+		<div class="content">
+			<h2>Process:</h2>
+			<span><p>DataSet介紹:</p>我們有兩組DataSet,分別是從Kaggle上抓取的資料和從台灣各大新聞網爬取的新聞標題資料<br></span>
+			<div class="content_list">
+				<p>一、資料處理方式:</p>
+				<ul>
+						<li>1.對各主題做基本分析</li>
+						<li>2.依不同主題深入分析</li>
+						<li>3.台灣與大陸新聞的主題比較</li>
+						<li>4.選出每篇文章前三名的字詞</li>
+						<li>5.繪製文字雲</li>
+				</ul>
+			</div>
+			<div class="content_list2">
+				<p>二、提取字詞詞性</p>
+			</div>
+			<div class="content_list3">
+				<p>三、提取情感字詞(使用 NTU 和 元智大學的情感詞庫)</p>
+				<ul>
+						<li>1.基本分析</li>
+						<li>2.繪製文字雲</li>
+				</ul>
+			</div>
+			<div class="content_list4">
+				<p>四、sas viya 文字分析</p>
+				<ul>
+						<li>1.文字剖析</li>
+						<li>2.詞囊分群</li>
+						<li>3.定義主題</li>
+				</ul>
+			</div>
+			<div class="content_list5">
+				<p>五、主題分析(使用 sas viya 算出的詞群定義主題)</p>
+				<ul>
+						<li>1.對各主題做基本分析</li>
+						<li>2.依不同主題深入分析</li>
+						<li>3.台灣與大陸新聞的主題比較</li>
+				</ul>
+			</div>
+			<span class="word2"><p></p></span>
+			<div class="content_img">
+				<img src="img/data.jpg">
+			</div>
+			<div class="content_arrow">
+				<img src="img/arrow.png">
+			</div>
+			<div class="content_img2">
+				<img src="img/word_base.jpg">
+			</div>
+			<div class="content_img3">
+				<img src="img/ana.png">
+			</div>
+			<div class="content_arrow2">
+				<img src="img/arrow.png">
+			</div>
+			<div class="content_arrow3">
+				<img src="img/arrow.png">
+			</div>
+			<div class="content_img4">
+				<img src="img/paper.png">
+			</div>
+
+		</div>
+		<div class="content1_data2">
+			<a href="https://infogram.com/login#/library" target="_blank">Article:Log in-infogram</a>
+		</div>
+	</div>
+	<div class="content3">
+		<h3 class="content_title3">Word</h3>
+		<a href="http://blog.pulipuli.info/2017/11/fasttag-identify-part-of-speech-in.html" target="_blank"><img src="img/word.png"></a>
+		
+
+	</div>
+	<div class="footer"></div>
+</body>
+</html>
