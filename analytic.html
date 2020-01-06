@@ -1,163 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head lang="zh_TW">
-	<title>Analytics</title>
+	<title>Word Analysis</title>
 	<meta charset="utf-8">
 	<meta name="description" content="假新聞分析">
-	<link rel="stylesheet" type="text/css" href="css/ttv.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/word.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<link rel="bookmark" href="img/favicon.ico"/>
 </head>
 <body>
 	<div class="container"></div>
 	<div class="header">
-		<a href="ttv.html"><h3>Analytics</h3></a>
+		<a href="outcome.html"><h3>Word Analysis</h3></a>
 		<p>What Are They Hiding?</p>
 	</div>
 	<div class="topnav">
 		<ul>
 			<a href="index.html">Home</a>
-			<a href="analytic.html">Analytics</a>
+			<a href="analytic.html">Word</a>
+			<a href="sense.html">Sense</a>
 			<a href="outcome.html">Outcome</a>
 		</ul>
 		<hr>
 	</div>
 	<div class="content">
-		<div class="graph">
-			<span>中國V.S臺灣</span>
-			<p>以下是兩個 DataSet 分別統計詞頻後的文字雲。</p>
-			<div class="CN">
-				<img src="img/CN_wordcould_all.png">
-				<p>圖一 : 關鍵詞文字雲-大陸小熊維尼</p>
+		<div class="cloud">
+			<div class="cloud2">
+					<img src="img/CN_wordcould_all.png">
+					<p>中國關鍵字文字雲以及排行</p>
 			</div>
-			<div class="TW">
+			<div class="cloud3">
 				<img src="img/TW_wordcould_all.png">
-				<p>圖二 : 關鍵詞文字雲-台灣皮卡丘</p>
+				<p>臺灣關鍵字文字雲以及排行</p>
 			</div>
-			<div class="CN2">
+			<div class="cloud4">
 				<img src="img/CN_word_rank.png">
-				<p>以下是兩個 DataSet ，取字頻最高的前十名。</p>
 			</div>
-			<div class="TW2">
+			<div class="cloud5">
 				<img src="img/TW_word_rank.png">
 			</div>
 		</div>
-		<div class="graph2">
-			<h2>關鍵字分析:</h2>
-			<p>使用以上聲量排名取前幾名作關鍵字分析。</p>
-			<div class="CN3">
+		<div class="ana">
+			<h2>China Keyword Analysis</h2>
+			<p>圖表顯示出哪些詞語的出現或不出現會影響中心詞語的一同出現。<br>
+
+			詞語節點的大小指出包括該詞語組合之文件的相對數量。詞語節點的顏色愈深，表示規則可用來預測關注詞語是否會出現在文件中的可靠性愈高。<br>相對的線條粗細可指出詞語之間的關聯程度。~符號代表此詞語節點沒出現會導致中心節點的出現。</p>
+			<div class="ana2">
 				<img src="img/CN_10rank.png">
-				<p>農村: 偏鄉政策</p>
+				<h2>農村以及偏鄉政策</h2>
+				<p>農村的各種政策字詞影響農村一詞的出現<br>可得知有許多農村政策相關的假新聞猖獗<br>推測可能是農村普遍教育程度不足容易受騙。</p>
 			</div>
-			<div class="TW3">
-				<img src="img/TW_10rank.png">
-				<p>台灣: 國家狀況與地位</p>
-			</div>
-			<div class="CN4">
+			<div class="ana3">
 				<img src="img/CN_Net.png">
-				<p>網友: 網軍??</p>
+				<h2>網軍</h2>
+				<p>由圖可知網友一詞多半牽連著對事情的評價<br>例如:吐槽、讚、評論、喊話、祝福。<br>假新聞中只要出現「直呼」兩字並且沒有出現「觀眾」這兩字<br>
+				便會有「網友」這兩字的存在。</p>
 			</div>
-			<div class="TW4">
-				<img src="img/TW_CN.png">
-				<p>中共: 匪諜滲入干政問題</p>
-			</div>
-			<div class="CN5">
+			<div class="ana4">
 				<img src="img/CN_diet.png">
-				<p>減肥: 減肥方法</p>
+				<h2>減重議題</h2>
+				<p>可看出減肥議題的假新聞常會伴隨著<br>中醫、健康、快速、方法等等詞彙來吸引受眾上鉤。</p>
 			</div>
-			<div class="TW5">
-				<img src="img/taiwan_president.png">
-				<p>總統: 總統大選資訊</p>
-			</div>
-			<div class="CN6">
-				<img src="img/CN-stock.png">
-				<p>股市: 股市與時事</p>
-			</div>
-			<div class="TW6">
-				<img src="img/TW_law.png">
-				<p>法案: 香港反送中狀況 & 人權問題</p>
-			</div>
-			<div class="CN7">
+			<div class="ana5">
 				<img src="img/CN_energy.png">
-				<p>充電: 電動車興起 & 手機充電</p>
+				<h2>3C以及能源議題</h2>
+				<p>可看出對於手機議題，關於充電的主題假新聞有較多的發揮空間，<br>而電動車的議題也有一定程度與充電有關，<br>但不影響手機的議題。</p>
 			</div>
-			<div class="TW7">
+			<div class="ana6">
+				<img src="img/CN-stock.png">
+				<h2>股市</h2>
+				<p>可看出中國相關的假新聞產出大多都和股市和時事有關，<br>但有趣的是股市衍生的相關詞彙卻不會和中國一起出現在同篇新聞中，<br>推測是運用中國股市製造假新聞時，通常不會對其深入探究，<br>而運用股市操作假新聞時，也不會針對中國做議題。</p>
+			</div>
+		</div>
+		<div class="ana_TW">
+			<h2>Taiwan Keyword Analysis</h2>
+			<div class="ana7">
+				<img src="img/TW_10rank.png">
+				<h2>臺灣</h2>
+				<p>可看出目前台灣新聞的主題多半在國際、外交關係和民主議題居多。<br>人民對民主以及台灣的國際問題越來越多人關注</p>
+			</div>
+			<div class="ana8">
+				<img src="img/TW_CN.png">
+				<h2>中國共產黨</h2>
+				<p>從字詞威脅、滲透、介入等等可知<br>目前的台灣新聞對於中共的相關報導多以對台的政治壓力為主。</p>
+			</div>
+			<div class="ana9">
+				<img src="img/taiwan_president.png">
+				<h2>總統大選</h2>
+				<p>除了理所當然的總統選舉的相關字詞之外，<br>中共和台灣並不會和總統一起出現，推測是以中華民國取代了台灣，<br>且總統議題和中共議題偏向分開報導。<br>意外的是除了候選人宋楚瑜，並未出現韓國瑜先生、蔡英文女士兩人。</p>
+			</div>
+			<div class="ana10">
 				<img src="img/TW_han.png">
-				<p>韓: 政治人物韓國瑜的事件 & 罷韓 vs. 挺韓</p>
+				<h2>韓國瑜</h2>
+				<p>針對熱門話題的政治人物韓國瑜的相關報導大多圍繞在選戰議題。<br>特別可以注意的是，罷韓 或是挺韓為相當關鍵的議題，<br>韓國瑜、蔡英文、柯文哲三人之間的問題也時常做連結</p>
 			</div>
-		</div>
-		<div class="graph3">
-			<h2>情感字詞分析</h2>
-			<p>以下是兩個 dataset ，提取情感字後，分別統計詞頻後的文字雲。</p>
-			<div class="CN8">
-				<img src="img/CN_wordcould_sense.png">
-				<p>圖一 : 情感文字雲-大陸小熊維尼</p>
+			<div class="ana11">
+				<img src="img/TW_law.png">
+				<h2>反送中 & 人權問題</h2>
+				<p>有關香港的報導大多以人權、法案有關，<br>有趣的是新聞並不會使用霸凌一詞來報導香港。<br>可能又有另一面向的問題</p>
+				<hr>
 			</div>
-			<div class="TW8">
-				<img src="img/TW_wordcould_sense.png">
-				<p>圖二 : 情感文字雲-台灣皮卡丘</p>
-			</div>
-			<div class="CN9">
-				<img src="img/CN_word_rank_P.png">
-				<p>圖三 : 中國前十名正面詞</p>
-			</div>
-			<div class="TW9">
-				<img src="img/TW_word_rank_P.png">
-				<p>圖四 : 臺灣前十名正面詞</p>
-			</div>
-			<div class="CN10">
-				<img src="img/CN_word_rank_N.png">
-				<p>圖五 : 中國前十名負面詞</p>
-			</div>
-			<div class="TW10">
-				<img src="img/TW_word_rank_N.png">
-				<p>圖六 : 臺灣前十名負面詞</p>
-			</div>
-			<div class="CN11">
-				<img src="img/CN_sense_pie.png">
-				<p>圖七 : 中國詞語正負向比例圖</p>
-			</div>
-			<div class="TW11">
-				<img src="img/TW_sense_pie.png">
-				<p>圖八 : 臺灣詞語正負向比例圖</p>
-			</div>
-		</div>
-		<div class="graph4">
-			<h2>主題分析:</h2>
-			<div class="CN12">
-				<img src="img/CN_topic_.png">
-				<p>中國主題一: 美妝</p>
-			</div>
-			<div class="CN13">
-				<img src="img/CN_topic_1.png">
-				<p>中國主題二:藝人</p>
-			</div>
-			<div class="CN14">
-				<img src="img/CN_topic_2.png">
-				<p>中國主題三:健康</p>
-			</div>
-			<div class="CN15">
-				<img src="img/CN_topic_3.png">
-				<p>中國主題四:通訊軟體</p>
-			</div>
-			<div class="CN16">
-				<img src="img/CN_topic_4.png">
-				<p>中國主題五:政策</p>
-			</div>
-			<div class="TW12">
-				<img src="img/TW_topic_.png">
-				<p>臺灣主題一: 國際</p>
-			</div>
-			<div class="TW13">
-				<img src="img/TW_topic_1_.png">
-				<p>臺灣主題二: 事故</p>
-			</div>
-			<div class="TW14">
-				<img src="img/TW_topic_2.png">
-				<p>臺灣主題三: 政治</p>
-			</div>
+
+
 		</div>
 	</div>
-	<div class="footer"></div>
+	<div class="footer">
+		<p>Visual Analysis</p>
+		<hr>
+		<div class="bottom_info">
+			<ul>
+				<a href="">何彥南</a>
+				<a href="">徐博揚</a>
+				<a href="">藍子軒</a>
+				<a href="">呂函庭</a>
+				<a href="">陳應中</a>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

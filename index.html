@@ -12,23 +12,23 @@
 <body>
 	<div class="container"></div>
 	<div class="header">
-		<a href="index.html"><h3>FAKE NEWS</h3></a>
+		<a href="index.html"><h3>News Analysis</h3></a>
 		<p>What Are They Hiding?</p>
 	</div>
 	<div class="topnav">
 		<ul>
 			<a href="index.html">Home</a>
-			<a href="analytic.html">Analytics</a>
+			<a href="analytic.html">Word</a>
+			<a href="sense.html">Sense</a>
 			<a href="outcome.html">Outcome</a>
 		</ul>
 		<hr>
 	</div>
 	<div class="content1">
-		<h2 class="content_title">Topic: 假新聞視覺化</h2>
-		<p>動機: 前陣子台灣的假新聞風波頻傳,由於假新聞會影響大眾想法,進而對國家造成巨大影響,所以我們想對這方面去研究、分析並呈現給大家看。<br>目的: 將假新聞的特徵視覺化,讓大家更淺顯易懂。<br>主要工具:  Python、R、SAS</p>
-		<div class="content1_data">
-			<a href="https://www.kaggle.com/c/fake-news-pair-classification-challenge/data" target="_blank">Article: WSDM-Fake News Classification</a>
-		</div>
+		<h2 class="content_title">Topic: 新聞視覺化</h2>
+		<p>動機: 前陣子台灣的假新聞風波頻傳,由於假新聞會影響大眾想法,進而對國家造成巨大影響,所以我們想對這方面去研究、分析並呈現給大家看。<br>目的: 將假新聞的特徵視覺化,讓大家更淺顯易懂。<br>主要工具:  Python、R、SAS<br>
+		臺灣新聞:大紀元，台視，ETToday<br>中國新聞:kaggle</p>
+
 		<div class="content">
 			<h2>Process:</h2>
 			<span><p>DataSet介紹:</p>我們有兩組DataSet,分別是從Kaggle上抓取的資料和從台灣各大新聞網爬取的新聞標題資料<br></span>
@@ -60,14 +60,6 @@
 						<li>3.定義主題</li>
 				</ul>
 			</div>
-			<div class="content_list5">
-				<p>五、主題分析(使用 sas viya 算出的詞群定義主題)</p>
-				<ul>
-						<li>1.對各主題做基本分析</li>
-						<li>2.依不同主題深入分析</li>
-						<li>3.台灣與大陸新聞的主題比較</li>
-				</ul>
-			</div>
 			<span class="word2"><p></p></span>
 			<div class="content_img">
 				<img src="img/data.jpg">
@@ -90,18 +82,75 @@
 			<div class="content_img4">
 				<img src="img/paper.png">
 			</div>
-
-		</div>
-		<div class="content1_data2">
-			<a href="https://infogram.com/login#/library" target="_blank">Article:Log in-infogram</a>
 		</div>
 	</div>
-	<div class="content3">
-		<h3 class="content_title3">Word</h3>
-		<a href="http://blog.pulipuli.info/2017/11/fasttag-identify-part-of-speech-in.html" target="_blank"><img src="img/word.png"></a>
-		
+	<div class="content_word">
+	
+		<div class="word_image">
+			<img src="img/CN_title_len.png">
+			<p>中國新聞標題長度</p>
+		</div>
+		<div class="word_image2">
+			<img src="img/CN_title_len_box.png">
+			<p>中國新聞標題長度盒型圖</p>
+		</div>
+		<div class="word_image3">
+			<img src="img/CN_word_num.png">
+			<p>中國新聞詞語數量長度</p>
+		</div>
+		<div class="word_image4">
+			<img src="img/CN_word_num_box.png">
+			<p>中國新聞詞語數量長度盒型圖</p>
+		</div>
+		<div class="word_image5">
+			<img src="img/TW_title_len.png">
+			<p>臺灣新聞標題長度</p>
+		</div>
+		<div class="word_image6">
+			<img src="img/TW_title_len_box.png">
+			<p>臺灣新聞標題長度盒型圖</p>
+		</div>
+		<div class="word_image7">
+			<img src="img/TW_word_num.png">
+			<p>臺灣新聞詞語數量長度</p>
+		</div>
+		<div class="word_image8">
+			<img src="img/TW_word_num_box.png">
+			<p>臺灣新聞詞語數量長度盒型圖</p>
+		</div>
+		<div class="China">
+			<h2>CHINA_Kaggle</h2>
+			<p>在 kaggle 的部分，我們選了一個關於 fake new 的資料，它是 WSDM 舉辦的一個假新聞分類的比賽資料。<br>我們使用 train.csv 裡面的 title1_zh 這個欄位，它有以下特點:<br>
 
+				1.包含 69170 篇文章標題<br>
+				2.全部屬於假新聞<br>
+				3. 中國-簡體中文<br>
+
+			下面是資料的分布，我們可以看到它主要介於20~30之間，其中最短 7 個字 ，最長的為151個字。</p>
+		</div>
+		<div class="Taiwan">
+			<h2>Taiwan_News</h2>
+			<p>我們的外部資料是爬取近期台灣的各種新聞標題，希望可以與上面的假新聞一起分析做比較，希望可以從中發現一些有趣的東西。<br>
+
+				1.包含 7091 筆標題資料<br>
+				2.來源: TTV台視 、ETToday 新聞雲、EpochTime  大紀元<br>
+				3. 台灣-繁體中文<br>
+
+				下面是資料的分布，我們可以看到它主要介於20~40之間，其中最短 6 個字 ，最長的為73個字。</p>
+		</div>
 	</div>
-	<div class="footer"></div>
+	<div class="footer">
+		<p>Visual Analysis</p>
+		<hr>
+		<div class="bottom_info">
+			<ul>
+				<a href="">何彥南</a>
+				<a href="">徐博揚</a>
+				<a href="">藍子軒</a>
+				<a href="">呂函庭</a>
+				<a href="">陳應中</a>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
