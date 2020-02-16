@@ -14,7 +14,7 @@
 - **專案報告自由度** : ★★★★✰
 
 # 期末專案
-我們這組抽到`新聞`
+我們這組抽到`新聞`為主題，結合 [kaggle 的新聞資料](https://www.kaggle.com/c/fake-news-pair-classification-challenge) 和 台灣的新聞資料([大紀元](https://www.epochtimes.com/b5/)、[ETtoday 新聞雲](https://www.ettoday.net/)、[TTV](https://www.ttv.com.tw/))，做假新聞相關分析。
 - **主題** : Fake New
 - **動機** : 前陣子台灣的假新聞風波頻傳,由於假新聞會影響大眾想法,進而對國家造成巨大影響,所以我們想對這方面去研究、分析並呈現給大家看。
 - **使用工具** : python、SAS、R
