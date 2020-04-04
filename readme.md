@@ -1,4 +1,4 @@
-# 東吳巨資-視覺化解析-期末專案
+# Visual analytics Project - 2019F
 ## 課程資訊
 - **科目名稱** ：視覺化解析 (VISUAL ANALYTICS0)
 - **開課學期** ：108學年度第1學期 (fall 2019) 
